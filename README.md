@@ -1,5 +1,3 @@
----
-
 # Nasdaq Frontend Assessment — Portfolio Calculator
 
 A React + TypeScript application that calculates the value of a portfolio of selected stocks over a date range using the provided CSV files:

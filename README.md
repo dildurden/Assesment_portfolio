@@ -1,8 +1,3 @@
-Here is the **proper, clean, fully-rendered Markdown** for your **README.md** — no code-block wrapping, no formatting issues.
-
-👉 **Just copy–paste this entire message directly into `README.md`.**
-Everything will render correctly on GitHub, VS Code, or any Markdown viewer.
-
 ---
 
 # Nasdaq Frontend Assessment — Portfolio Calculator

@@ -65,15 +65,16 @@ If a symbol has **no data at all** in the range, it is excluded and reported as 
 ```
 src/
   data/
-    normalizeStockData.ts     # CSV → normalized date/symbol price map
+    parseCsv.ts                # Generic CSV -> object array parser
+    loadStockData.ts           # Fetches raw CSVs + parses them
+    loadNormalizedPrices.ts    # Loads + normalizes into pricesByDate
+    normalizeStockData.ts      # id_stock → symbol mapping + price map
   logic/
     calculatePortfolio.ts     # Main portfolio math
   components/
     PortfolioForm.tsx         # User inputs
     PortfolioSummary.tsx      # Final calculated output
     PortfolioChart.tsx        # Recharts line graph
-  utils/
-    number.ts                 # parseNumeric helper (handles commas)
   tests/
     setupTests.ts             # jest-dom + RTL setup
 

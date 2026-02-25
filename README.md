@@ -156,13 +156,13 @@ Tests cover:
 ### Build image
 
 ```bash
-docker build -t nasdaq-portfolio .
+docker build -t portfolio .
 ```
 
 ### Run container
 
 ```bash
-docker run --rm -p 4173:4173 nasdaq-portfolio
+docker run --rm -p 4173:4173 portfolio
 ```
 
 Open:
@@ -177,7 +177,7 @@ http://localhost:4173
 
 ## 🧠 Assumptions & Design Decisions
 
-- Only **closing prices** are used (per assessment instructions).
+- Only **closing prices** are used.
 - Dates are ISO (`YYYY-MM-DD`), making lexicographic sorting valid.
 - Full investment is reallocated among symbols that **have data** during the chosen range.
 - Missing daily prices use **last observation carried forward** to keep the series continuous.
@@ -198,7 +198,3 @@ This ensures:
 - UI stays simple and declarative
 
 UI components use proper `htmlFor`/`id` relationships for accessibility and RTL compatibility.
-
----
-
-If you'd like, I can also generate a **short animated GIF preview**, **screenshots**, **API-style documentation**, or a **Design Decisions** appendix.
